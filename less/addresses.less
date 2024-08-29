@@ -1,0 +1,90 @@
+.addresses {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: calc(100vh - 27rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    border-radius: 0.625rem;
+    border: 1px solid #4D4848;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88.94rem;
+    min-height: 12.5rem;
+    padding: 0 3.75rem 0 1.875rem;
+    border-bottom: 1px solid #4D4848
+  }
+
+  &__item:last-child {
+    border: none;
+  }
+
+  &__item-text {
+    position: relative;
+    margin-bottom: 1.75rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__item-text:last-child {
+    padding-left: 1rem;
+  }
+
+  &__item-text:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.625rem;
+    width: 1.63rem;
+    height: 1.69rem;
+    background: url(../images/arrow-address.png) no-repeat;
+    background-size: contain;
+  }
+
+  &__item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.56rem;
+    height: 3.75rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 0.63rem;
+    border: none;
+    background: rgb(0, 170, 138);
+    cursor: pointer;
+  }
+
+
+  &__item-btn:hover,
+  &__item-btn:focus-visible {
+    filter: brightness(1.25);
+    transition: filter .2s;
+  }
+}
+
+.addresses::-webkit-scrollbar {
+  width: 0;
+}

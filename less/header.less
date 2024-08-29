@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2.125rem;
+  width: 120rem;
+  height: 5rem;
+  padding: 0 1.625rem;
+  background: #034EA2;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.44rem;
+    height: 2.88rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(206, 100, 100);
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn:last-child {
+    width: 9.81rem;
+    height: 2.88rem;
+  }
+
+  &__btn:hover,
+  &__btn:focus-visible {
+    filter: brightness(1.25);
+    transition: filter .2s;
+  }
+}

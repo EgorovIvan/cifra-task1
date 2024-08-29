@@ -1,0 +1,30 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 120rem;
+  height: calc(100vh - 5rem);
+  background: url(../images/bg.webp) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/bg@2x.webp) no-repeat;
+    background-size: cover;
+  }
+
+  &__cities {
+    width: 88.06rem;
+    height: 25.25rem;
+    margin: 5rem auto 0;
+    background: url(../images/cities.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/cities@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+
+

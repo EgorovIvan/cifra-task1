@@ -1,0 +1,27 @@
+.timetable {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: calc(100vh - 44rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__block {
+    width: 88.94rem;
+    min-height: 36.38rem;
+    background: url(../images/timetable.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/timetable@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.timetable::-webkit-scrollbar {
+  width: 0;
+}

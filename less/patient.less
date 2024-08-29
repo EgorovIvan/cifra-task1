@@ -1,0 +1,27 @@
+.patient {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: calc(100vh - 44rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__block {
+    width: 100%;
+    min-height: 56.63rem;
+    background: url(../images/patient.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/patient@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.patient::-webkit-scrollbar {
+  width: 0;
+}

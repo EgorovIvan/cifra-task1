@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IGIS</title>
+  <meta name="description" content="Удобный сайт для записи в мед учреждение">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+
+  <!-- styles -->
+  <link rel="stylesheet/less" href="../less/style.less">
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+<header class="header">
+  <button class="header__btn" id="login" type="button">Вход</button>
+  <button class="header__btn" id="sign" type="button">Регистрация</button>
+</header>
+<main class="main">
+  <div class="container">
+
+    <section class="stages">
+      <div class="stages__item">
+        <p class="stages__item-number">1</p>
+        <p class="stages__item-text">
+          Выбор <br>
+          медорганизации
+        </p>
+      </div>
+      <img src="../images/arrow.svg" alt="arrow">
+      <div class="stages__item">
+        <p class="stages__item-number">2</p>
+        <p class="stages__item-text">
+          Выбор <br>
+          специальности
+        </p>
+      </div>
+      <img src="../images/arrow.svg" alt="arrow">
+      <div class="stages__item stage-active">
+        <p class="stages__item-number">3</p>
+        <p class="stages__item-text">
+          Выбор врача <br>
+          и времени
+        </p>
+      </div>
+      <img src="../images/arrow-active.svg" alt="arrow-active">
+      <div class="stages__item">
+        <p class="stages__item-number">4</p>
+        <p class="stages__item-text">
+          Оформление <br>
+          записи
+        </p>
+      </div>
+    </section>
+
+    <section class="form">
+      <p class="form__text">Город: Ижевск</p>
+      <select class="form__select" name="cities" id="cities">
+        <option value="value1" disabled selected>
+          Выбрать другой город
+        </option>
+        <option value="value1">Ижевск</option>
+        <option value="value2">Можга</option>
+        <option value="value3">Сарапул</option>
+        <option value="value4">Алнаши</option>
+      </select>
+    </section>
+
+    <section class="form">
+      <p class="form__text">Медорганизация: ГКБ №8 имени Однопозова И.Б. (ранее гор. поликлиника №3)</p>
+      <select class="form__select" name="addresses" id="addresses">
+        <option value="addresses1" disabled selected>
+          Выбрать другую организацию
+        </option>
+        <option value="addresses1">ГКБ №2</option>
+        <option value="addresses2">ГКБ №3</option>
+        <option value="addresses3">ГКБ №4</option>
+        <option value="addresses4">ГКБ №5</option>
+      </select>
+    </section>
+
+    <section class="form">
+      <p class="form__text">Специальность: Детский кардиолог</p>
+      <select class="form__select" name="specialties" id="specialties">
+        <option value="value1" disabled selected>
+          Выбрать другую специальность
+        </option>
+        <option value="specialties1">Кардиолог</option>
+        <option value="specialties2">Хирург</option>
+        <option value="specialties3">Терапевт</option>
+      </select>
+    </section>
+
+    <section class="doctor">
+          <h1 class="doctor__title">Антошкина Анастасия Михайловна</h1>
+          <div class="doctor__inner">
+            <p class="doctor__text">Доступных номерков: 37</p>
+            <button class="doctor__btn ">Расписание</button>
+            <button class="doctor__btn">Выбрать талон </button>
+          </div>
+    </section>
+
+  </div>
+</main>
+</body>
+
+</html>
